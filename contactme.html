@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact us</title>
+
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+nav {
+  float: left;
+  width: 15%;
+  height: 600px;
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #f1f1f1;
+  height: 600px;
+}
+
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.nav{
+  font-family:"comic sans sarif";
+  font-style: italic;
+}
+
+.art{
+  font-family:"comic sans sarif";
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <header>
+  <h2>CONTACT US:</h2>
+  </header>
+<SECTION>
+
+  <nav class="nav">
+    <ul>
+      <li><a href=""><h2>Home</h2></a></li>
+      <li><a href=""><h2>News</h2></a></li>
+      <li><a href=""><h2>Notice</h2></a></li>
+    </ul>
+  </nav>
+
+<article class="art">
+<form NAME="CONTACTME" action="mailto:omsahu.cool@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+
+  <label>Your name:</label> <br />
+  <input type="text" name="NAME:" required> <br /> <br />
+
+  <label>Your e-mail:</label> <br />
+  <input type="email" name="EMAIL:" required> <br /> <br />
+
+  <label>Your registration number:</label> </br>
+  <input type="number" name="REG.NO:" required> </br> <br />
+
+  <label>Your message:</label> <br />
+  <textarea name="MESSAGE:" rows="10" cols="30" ></textarea> <br />
+
+  <input type="submit" > <br />
+</article>
+
+</section>
+
+
+
+</form>
+</body>
+
+</html>
