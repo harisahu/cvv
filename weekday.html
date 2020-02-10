@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Mess food menu</title>
+  <meta charset="utf-8">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ <style>
+ body {
+   background-color:#f6e7e6;
+ }
+
+ .box1 {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.box2 {
+ position: relative;
+ float: center;
+ width: 33.33%;
+ padding: 15px;
+}
+
+.image {
+  display: block;
+  width: 250px;
+  height: 300;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.box1:hover .overlay {
+  opacity: 1;
+}
+
+.box2:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ </style>
+</head>
+
+<body>
+
+<div class="row">
+
+    <div class="box1">
+      <a href="feedback.html">
+      <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
+      alt="monday" class="image" id="monday" height="250" width="350" style="border-radius:25px;">
+      <div class="overlay">
+       <div class="text">monday</div>
+      </div>
+    </a>
+    </div>
+
+
+
+    <div class="box1">
+      <a href="feedback.html">
+      <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
+      alt="tuesday" class="image" id="tuesday" height="250" width="350" style="border-radius:25px;">
+      <div class="overlay">
+       <div class="text">tuesday</div>
+      </div>
+    </a>
+    </div>
+
+
+
+    <div class="box1">
+      <a href="feedback.html">
+      <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
+      alt="wednesday" class="image" id="wednesday" height="250" width="350" style="border-radius:25px;">
+      <div class="overlay">
+       <div class="text">wednesday</div>
+      </div>
+    </a>
+    </div>
+
+</div>
+
+
+
+<div class="row">
+
+    <div class="box2">
+      <a href="feedback.html">
+      <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
+      alt="wednesday" class="image" id="thursday" height="250" width="350" style="border-radius:25px;">
+      <div class="overlay">
+       <div class="text">thursday</div>
+      </div>
+    </a>
+    </div>
+
+
+    <div class="box2">
+      <a href="feedback.html">
+      <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
+      alt="wednesday" class="image" id="friday" height="250" width="350" style="border-radius:25px;">
+      <div class="overlay">
+       <div class="text">friday</div>
+      </div>
+    </a>
+    </div>
+</div>
+
+
+
+  <script>
+function getRandomImage() {
+var images = [ 'https://oi301.photobucket.com/albums/nn42/_muybonita_/1893203974_241330726f_b.jpg', 'https://oi155.photobucket.com/albums/s289/gooiool/Butterfly1078xPROOF.jpg'];
+var image = images[Math.floor(Math.random()*images.length)];
+
+return image;
+}
+
+function displayRandomImage() {
+var htmlImage = document.getElementById("monday");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+
+</script>
+
+
+<script>
+function getRandomImage() {
+var images = [ 'https://oi301.photobucket.com/albums/nn42/_muybonita_/1893203974_241330726f_b.jpg', 'https://oi155.photobucket.com/albums/s289/gooiool/Butterfly1078xPROOF.jpg'];
+var image = images[Math.floor(Math.random()*images.length)];
+
+return image;
+}
+
+function displayRandomImage() {
+var htmlImage = document.getElementById("wednesday");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+
+</script>
+
+
+<script>
+function getRandomImage() {
+var images = [ 'https://oi301.photobucket.com/albums/nn42/_muybonita_/1893203974_241330726f_b.jpg', 'https://oi155.photobucket.com/albums/s289/gooiool/Butterfly1078xPROOF.jpg'];
+var image = images[Math.floor(Math.random()*images.length)];
+
+return image;
+}
+
+function displayRandomImage() {
+var htmlImage = document.getElementById("tuesday");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+
+</script>
+
+
+<script>
+function getRandomImage() {
+var images = [ 'https://oi301.photobucket.com/albums/nn42/_muybonita_/1893203974_241330726f_b.jpg', 'https://oi155.photobucket.com/albums/s289/gooiool/Butterfly1078xPROOF.jpg'];
+var image = images[Math.floor(Math.random()*images.length)];
+
+return image;
+}
+
+function displayRandomImage() {
+var htmlImage = document.getElementById("thursday");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+
+</script>
+
+
+<script>
+function getRandomImage() {
+var images = [ 'https://oi301.photobucket.com/albums/nn42/_muybonita_/1893203974_241330726f_b.jpg', 'https://oi155.photobucket.com/albums/s289/gooiool/Butterfly1078xPROOF.jpg'];
+var image = images[Math.floor(Math.random()*images.length)];
+
+return image;
+}
+
+function displayRandomImage() {
+var htmlImage = document.getElementById("friday");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+
+</script>
+
+</body>
+
+</html>
